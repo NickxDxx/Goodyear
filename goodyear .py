@@ -74,11 +74,7 @@ for url in size_links:
         warranty = raw_page.find("b", "bolder").text + " Tread Life Ltd. Warranty"
     except:
         warranty = ""
-
-    # if season == "None" and terrain == "None" and warranty == "None":
-    #     container2 = raw_page.find_all("span", "awr-pdp__feature-icons-text")
-    #     for s in container2:
-    #         season = s.text
+        
     raw_name = raw_page.find("h1").text
     if raw_name == "Browse All Tires" or "Sorry" in raw_name:
         continue
